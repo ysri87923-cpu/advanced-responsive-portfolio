@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of a web developer.">
+  <title>My Portfolio | Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="Home">YS<span>.</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Switch color theme" title="Switch theme">☾</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR OPPORTUNITIES</p>
+        <h1>Hello, I'm <span class="accent">Yuvan Sri.</span><br>I build for the web.</h1>
+        <p class="hero-text">An aspiring web developer focused on creating clean, responsive and user-friendly digital experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="#contact">Get in touch</a>
+        </div>
+        <div class="hero-meta">
+          <span>Based in India</span><span class="meta-line"></span><span>Web Development</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Decorative code illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="code-card">
+          <div class="code-top"><i></i><i></i><i></i><span>developer.js</span></div>
+          <div class="code-content">
+            <p><span class="code-purple">const</span> developer = {</p>
+            <p class="indent">name: <span class="code-green">'Yuvan Sri'</span>,</p>
+            <p class="indent">focus: <span class="code-green">'Web development'</span>,</p>
+            <p class="indent">learning: <span class="code-green">'Every day'</span>,</p>
+            <p class="indent">creative: <span class="code-orange">true</span></p>
+            <p>};</p>
+            <p class="code-comment">// turning ideas into interfaces</p>
+            <p><span class="code-purple">return</span> <span class="code-green">'Hello, world!'</span>;</p>
+          </div>
+        </div>
+        <div class="floating-chip chip-top">{"{ }"} <span>Clean code</span></div>
+        <div class="floating-chip chip-bottom">✦ <span>Creative thinking</span></div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div><p class="eyebrow">01 / ABOUT ME</p><h2>Curious mind.<br><span class="accent">Thoughtful builds.</span></h2></div>
+        <div class="about-copy">
+          <p>I'm an IT student building my skills in web development. I enjoy learning how websites work, solving problems and turning ideas into useful digital experiences.</p>
+          <p>This portfolio is a place to share what I'm learning and the projects I create along the way.</p>
+          <a class="text-link" href="#contact">Let's connect <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading"><div><p class="eyebrow">02 / WHAT I USE</p><h2>My current <span class="accent">toolkit.</span></h2></div><p class="section-note">Technologies and concepts I'm learning and practising.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card"><span class="skill-icon">⌘</span><h3>HTML5</h3><p>Semantic structure and accessible content.</p></article>
+        <article class="skill-card"><span class="skill-icon">✳</span><h3>CSS3</h3><p>Responsive layouts, Grid, Flexbox and animation.</p></article>
+        <article class="skill-card"><span class="skill-icon">JS</span><h3>JavaScript</h3><p>Interactive features and dynamic behaviour.</p></article>
+        <article class="skill-card"><span class="skill-icon">◈</span><h3>Java</h3><p>Programming fundamentals and problem solving.</p></article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">03 / SELECTED WORK</p><h2>Things I've <span class="accent">created.</span></h2></div><p class="section-note">A few sample project cards. Replace these with your own work.</p></div>
+        <div class="projects-grid">
+          <article class="project-card project-featured">
+            <div class="project-visual visual-one"><div class="browser-window"><div class="browser-bar"><i></i><i></i><i></i></div><div class="mock-dashboard"><div></div><div></div><div></div><div></div></div></div></div>
+            <div class="project-info"><div><p class="project-type">WEB APPLICATION</p><h3>Academic Dashboard</h3><p>A dashboard concept for organising learning resources and academic information.</p></div><span class="project-arrow">↗</span></div>
+            <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-two"><div class="mini-profile"><div class="mini-avatar">YS</div><div class="mini-line"></div><div class="mini-line short"></div><div class="mini-pills"><i></i><i></i><i></i></div></div></div>
+            <div class="project-info"><div><p class="project-type">PERSONAL WEBSITE</p><h3>Portfolio Website</h3><p>A responsive personal website to present skills and projects.</p></div><span class="project-arrow">↗</span></div>
+            <div class="tag-list"><span>CSS Grid</span><span>Flexbox</span><span>Responsive</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container contact-section" id="contact">
+      <div class="contact-card">
+        <div><p class="eyebrow">04 / GET IN TOUCH</p><h2>Have an idea?<br><span class="accent">Let's talk.</span></h2><p class="contact-text">I'm always interested in learning, collaborating and exploring new opportunities.</p></div>
+        <div class="contact-action"><a class="button button-primary" href="mailto:your.email@example.com">Email me <span>↗</span></a><p>Replace this email with your own.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container"><a class="logo" href="#home">YS<span>.</span></a><p>Designed & built with curiosity. © <span id="year"></span></p><a href="#home" class="back-top">Back to top ↑</a></footer>
+</body>
+</html>
